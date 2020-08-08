@@ -13,8 +13,11 @@ public class ArrayExample {
 		myArray[3]=5;
 		myArray[4]=7;
 		myArray[6]=10;
-		
-		
+		try{myArray[10]=4;
+		}catch(ArrayIndexOutOfBoundsException e){
+			System.out.println(e);
+		//System.out.println("The value of 10 is "+myArray[10]);
+		}
 		System.out.println("The value of 0 is "+myArray[0]);
 		System.out.println("The value of 1 is "+myArray[1]);
 		System.out.println("The value of 3 is "+myArray[3]);

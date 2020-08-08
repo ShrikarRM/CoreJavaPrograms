@@ -1,6 +1,14 @@
 
 public class DoubleArray {
-
+int arrlength;
+public void arrayDimension (double dArray)throws Arrecpn{
+	if(dArray<4)
+		System.out.println("entered length is within max index");
+	else
+		throw new Arrecpn("Exceeding arraylength");
+}	
+}
+class Tester{
 	public static void main(String[] args) {
 		System.out.println("Start prog");
 		
@@ -11,6 +19,11 @@ public class DoubleArray {
 		dArray[2]=45.00;
 		dArray[3]=25.00;
 		
+		try{dArray[5]=20.00;
+		
+		}catch (Arrecpn a){
+			a.printStackTrace();
+		}
 		System.out.println("The value of array is :");
 		
 		int len=dArray.length;
@@ -22,3 +35,4 @@ public class DoubleArray {
 	}
 
 }
+
